@@ -16,5 +16,5 @@ requires "mofuw"
 
 task server, "start server":
   rmDir "bin"
-  exec "nimble build --threads:on -d:ssl -d:release"
+  exec "nimble build --threads:on -d:ssl -d:release -y"
   exec "bin/mofuw_test"
