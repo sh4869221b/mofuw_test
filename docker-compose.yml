@@ -1,6 +1,6 @@
 version: '2'
 services:
-  sharenote:
+  mofuw:
     image: nimlang/nim:alpine
     volumes:
       - ".:/src"
@@ -8,7 +8,6 @@ services:
     command: [sh, -c, nimble server]
     networks:
       - mofuw
-
 networks:
   mofuw:
     external: true
