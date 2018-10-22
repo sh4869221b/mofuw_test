@@ -4,7 +4,7 @@ import lib/listGet
 
 proc handler(ctx: MofuwCtx) {.async.} =
   if ctx.getPath == "/":
-    mofuwOK("Hello","plain/txt")
+    mofuwOK("Hellos","plain/txt")
   elif ctx.getPath == "/api":
     mofuwOK("api")
   elif ctx.getPath == "/list":
